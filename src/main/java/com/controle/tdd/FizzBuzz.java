@@ -2,10 +2,13 @@ package com.controle.tdd;
 
 public class FizzBuzz {
     public static String de(int nbre) {
-
-        if (nbre == 1){
-            return "1";
+        for (int i = 0; i < nbre; i++) {
+            if (nbre % 3 == 0) {
+                return "Fizz";
+            } else {
+                return Integer.toString(nbre);
+            }
         }
-        return "2";
+        return "Erreur";
     }
 }
