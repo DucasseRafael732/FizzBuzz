@@ -32,7 +32,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void fizzBuzz_de_3_devrait_retourner_3() {
+    void fizzBuzz_de_3_devrait_retourner_Fizz() {
 
         FizzBuzz fizz = new FizzBuzz();
         // GIVEN
@@ -44,7 +44,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void fizzBuzz_de_5_devrait_retourner_5() {
+    void fizzBuzz_de_5_devrait_retourner_Buzz() {
 
         FizzBuzz fizz = new FizzBuzz();
         // GIVEN
@@ -53,5 +53,17 @@ public class FizzBuzzTest {
         String resultat = fizz.de(fizznb);
         // THEN
         assertEquals("Buzz", resultat);
+    }
+
+    @Test
+    void fizzBuzz_de_15_devrait_retourner_FizzBuzz() {
+
+        FizzBuzz fizz = new FizzBuzz();
+        // GIVEN
+        int fizznb = 15;
+        // WHEN
+        String resultat = fizz.de(fizznb);
+        // THEN
+        assertEquals("FizzBuzz", resultat);
     }
 }
