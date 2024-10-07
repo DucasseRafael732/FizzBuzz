@@ -18,4 +18,16 @@ public class FizzBuzzTest {
         // THEN
         assertEquals("1", resultat);
     }
+
+    @Test
+    void fizzBuzz_de_2_devrait_retourner_2() {
+
+        FizzBuzz fizz = new FizzBuzz();
+        // GIVEN
+        int fizznb = 2;
+        // WHEN
+        String resultat = fizz.de(fizznb);
+        // THEN
+        assertEquals("2", resultat);
+    }
 }
